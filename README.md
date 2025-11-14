@@ -8,6 +8,11 @@ Galaxy morphology (e.g. spiral vs elliptical) is a key observable for understand
 
 A good quality image based classifier can (a) reproduce human labels at scale, and (b) free expert time for rare or ambiguous objects.
 
+Example images:
+
+![A spiral galaxy](1254.jpg)
+![An elliptical galaxy](1380.jpg)
+
 ## Problem Statement
 
 Given optical images of galaxies, we want to train a convolutional neural network (CNN) based on ResNet-50 to automatically classify galaxies into simple morphological classes (e.g. spiral vs elliptical) using high-confidence Galaxy Zoo labels.
@@ -107,10 +112,5 @@ The images used as test/train in this project are available from https://data.ga
 
 If wishing to reproduce the training in this Git repo, these images should be downloaded and the file paths referenced in the repo's scripts should be appropriately updated.
 
-Example images:
-
-![A spiral galaxy](1254.jpg)
-![An elliptical galaxy](1380.jpg)
-
-The trained model also effectively classifies higher quality images of lower redshift galaxies. For example:
+The trained model effectively classifies higher quality images of lower redshift galaxies. For example:
 ![A spiral galaxy](/PyTorch_Gal_Class_Model_Training/prediction/spiral_to_test_ii.jpg)
